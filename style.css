@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(151, 229, 226);
+}
+div {
+    text-align: center;
+}
+h1 {
+    font-size: 100px;
+    color: rgb(9, 15, 15);
+    margin-bottom: auto;
+}
+button {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(68, 68, 165);
+    color: mintcream;
+}
+p {
+    font-size: 40px;
+}
+button:hover {
+    background-color: rgb(62, 139, 62);
+}
