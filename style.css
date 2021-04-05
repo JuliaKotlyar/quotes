@@ -21,3 +21,7 @@ p {
 button:hover {
     background-color: rgb(62, 139, 62);
 }
+.quote-text {
+    font-size: 30px;
+    font-style: italic;
+}

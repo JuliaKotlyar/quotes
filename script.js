@@ -1,10 +1,10 @@
 const arrOfQuotes = [
     {
-        autor: 'Walt Disney',
+        author: 'Walt Disney',
         quote: 'All our dreams can come true, if we have the courage to pursue them.',
     },
     {
-        autor: 'Mark Twain',
+        author: 'Mark Twain',
         quote: 'The secret of getting ahead is getting started.',
     },
     {
@@ -46,3 +46,11 @@ const arrOfQuotes = [
 function randomSelector(arrLength) {
     return Math.floor(Math.random() * arrLength);
 }
+
+const btnNewQuote = document.querySelector('.btn-new-quote');
+btnNewQuote.addEventListener('click', function generateQuote() {
+    const randomNumber = randomSelector(arrOfQuotes.length);
+    document.getElementById('quoteOutput').innerHTML = `"` + arrOfQuotes[randomNumber].quote + `"`;
+    document.getElementById('authorOutput').innerHTML =
+        `-` + arrOfQuotes[randomNumber].author + `-`;
+});
